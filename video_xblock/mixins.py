@@ -2,6 +2,7 @@
 Video XBlock mixins geared toward specific subsets of functionality.
 """
 import logging
+import sys
 
 import requests
 from pycaption import detect_format, WebVTTWriter
@@ -624,5 +625,7 @@ class LocationMixin(XBlock):
         Returns stub value if `location` property is unavailabe. E.g. in workbench runtime.
         """
         if hasattr(self, 'location'):
+            if sys.version_info[0] >= 3:
+                unicode = str
             return unicode(self.location)
         return 'usage_id'
