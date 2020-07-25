@@ -675,7 +675,7 @@ class VideoXBlock(
             else:
                 resp['data'] = {'canShow': False}
 
-        response = Response(json.dumps(resp), content_type='application/json')
+        response = Response(json_body=json.dumps(resp), content_type='application/json; charset=UTF-8')
         return response
 
     def authenticate_video_api(self, token):
