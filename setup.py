@@ -50,11 +50,12 @@ setup(
     dependency_links=[
         # At the moment of writing PyPI hosts outdated version of xblock-utils, hence git
         # Replace dependency links with numbered versions when it's released on PyPI
-        'git+https://github.com/edx/xblock-utils.git@v1.2.0#egg=xblock-utils==1.2.0',
+        # 'git+https://github.com/edx/xblock-utils.git@v1.2.0#egg=xblock-utils==1.2.0',
+        'git+https://github.com/edx/xblock-utils.git@v2.1.1#egg=xblock-utils==2.1.1',
     ],
     install_requires=[
         'XBlock>=0.4.10,<2.0.0',
-        'xblock-utils>=1.0.2,<=1.2.0',
+        'xblock-utils>=1.0.2,<=2.1.1',
         'pycaption>=0.7.1,<=1.1.0',  # The latest Python 2.7 compatible version
         'beautifulsoup4>=4.2.1,<4.5.0',
         'html5lib==0.9999999',
