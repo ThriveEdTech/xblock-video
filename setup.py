@@ -57,6 +57,7 @@ setup(
         'xblock-utils>=1.0.2,<=1.2.0',
         'pycaption>=0.7.1,<=1.1.0',  # The latest Python 2.7 compatible version
         'beautifulsoup4>=4.2.1,<4.5.0',
+        'html5lib<=0.9999999',
         'requests>=2.9.1,<3.0.0',
         'babelfish>=0.5.5,<0.6.0',
     ],
