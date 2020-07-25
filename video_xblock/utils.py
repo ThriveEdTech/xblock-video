@@ -78,7 +78,7 @@ def underscore_to_mixedcase(value):
             yield str.capitalize
 
     mix = mixedcase()
-    return "".join(mix.next()(x) if x else '_' for x in value.split("_"))
+    return "".join(mix.__next__()(x) if x else '_' for x in value.split("_"))
 
 
 def remove_escaping(text):
