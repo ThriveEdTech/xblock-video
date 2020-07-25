@@ -3,7 +3,7 @@
 YouTube Video player plugin.
 """
 
-import HTMLParser
+from html.parser import HTMLParser
 import json
 import httplib
 import re
